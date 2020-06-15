@@ -190,7 +190,7 @@ void reconnect() {
  while (!espClient.connected()) {
  Serial.print("Attempting connection to Broker...");
  // Attempt to connect
- if (client.connect(WiFi.macAddress(),"test","test")) {
+ if (client.connect(WiFi.macAddress().c_str(),"test","test")) {
   Serial.println("connected");
   client.subscribe(topic.c_str());
  } else {
