@@ -218,7 +218,7 @@ int getPresence(){ //Get presence
 }
 
 int getLight() {
-  int value = random (0, 100);
+  float value = random (0, 100);
   return value;
 }
  
