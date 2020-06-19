@@ -8,9 +8,9 @@
 WiFiClient espClient;
 PubSubClient client(espClient);
  
-String topic = "testing/miquel"; // Topic de la placa
-const char* ssid = "MiFibra-D6FA"; // SSID Wifi         
-const char* password = "fsEtk2oX"; // Contraseña Wifi
+String topic = "mollcontrol/board/error"; // Topic de la placa si hay errores
+const char* ssid = ""; // SSID Wifi         
+const char* password = ""; // Contraseña Wifi
 const char* mqtt_server = "84.120.156.93"; // IP del Broker
 int mqtt_port = 1986; // Puerto del Broker
 
